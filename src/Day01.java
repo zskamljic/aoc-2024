@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class Main {
+public class Day01 {
     public static void main(String[] args) throws IOException {
         var testInput = """
             3   4
