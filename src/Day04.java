@@ -15,7 +15,7 @@ public class Day04 {
     private static final int DOWN_RIGHT = 7;
 
     public static void main(String[] args) throws IOException {
-        var input = Files.readAllLines(Path.of("/home/zan/Downloads/input04.txt")).toArray(String[]::new);
+        var input = Files.readAllLines(Path.of("input04.txt")).toArray(String[]::new);
 
         var grid = new char[input.length][];
         for (int y = 0; y < input.length; y++) {
