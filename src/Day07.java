@@ -44,7 +44,7 @@ public class Day07 {
                 var state = stack.pop();
                 var sum = state.result() + state.remaining().getFirst();
                 var product = state.result() * state.remaining().getFirst();
-                var concated = Long.parseLong(state.result() + "" + state.remaining().getFirst());
+                var concated = state.result() * (long) Math.pow(10, 1 + Math.floor(Math.log10(state.remaining().getFirst()))) + state.remaining().getFirst();
                 if (state.remaining().size() == 1) {
                     if (sum == result || product == result || (concat && concated == result)) return true;
                     continue;
