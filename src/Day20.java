@@ -32,7 +32,6 @@ public class Day20 {
             grid[y] = line.replaceAll("[SE]", ".").toCharArray();
         }
 
-
         var result = dijkstra(grid, start, end);
         part1(result);
         part2(result);
@@ -83,11 +82,6 @@ public class Day20 {
                     .add(new Cheat(a, b));
             }
         }
-//        cheats.entrySet()
-//            .stream()
-//            .filter(e -> e.getKey() >= 50)
-//            .sorted(Map.Entry.comparingByKey())
-//            .forEach(e -> System.out.println(e.getValue().size() + ": " + e.getKey()));
 
         var solution = cheats.entrySet()
             .stream()
